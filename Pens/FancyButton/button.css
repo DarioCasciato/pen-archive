@@ -114,6 +114,10 @@ body
     transform: scale(0.95);
 }
 
+.back:active {
+    transform: scale(0.9);
+}
+
 .back svg:hover {
     color: rgba(170, 170, 170, 1);
 }
