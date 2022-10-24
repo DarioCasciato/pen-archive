@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+html,body 
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font: "nunito", sans-serif;
+    font-size: 1vh;
+    overflow: hidden;
+}
+
+.leftside
+{
+    z-index: 1;
+    position: inherit;
+    display: block;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    margin: 5% 2% 5% 10%;
+    background: red;
+}
+
+.rightside
+{
+    z-index: 1;
+    width: 40%;
+    position: relative;
+    margin: 5% 10% 5% 0;
+    background: red;
+}
+
+.leftside .back
+{
+    z-index: 1;
+    background-color: blue;
+    
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 25%;
+    height: 3%;
+}
+
+.leftside .songinfo
+{
+    background-color: yellow;
+    margin: 5% 5% 5% 5%;
+}
+
+.leftside .controls
+{
+    background-color: yellow;
+    margin: 5% 5% 5% 5%;
+}
+
+.leftside .progress
+{
+    background-color: yellow;
+    margin: 5% 5% 5% 5%;
+}
+
+.leftside .functions
+{
+    background-color: yellow;
+    margin: 5% 5% 5% 5%;
+}
