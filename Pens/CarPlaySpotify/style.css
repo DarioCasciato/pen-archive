@@ -1,67 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+:root
+{
+    --songtitle:
+}
+
+*
+{
+    font-family: "BlinkMacSystemFont", sans-serif;
+}
 
 html,body 
 {
     display: flex;
     height: 100%;
     width: 100%;
-    font: "nunito", sans-serif;
     font-size: 1vh;
     overflow: hidden;
+}
+
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation .back
+{
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 12%;
+}
+
+
+.navigation .back .icon
+{
+    scale: 2.2;
+    width: 80%;
+    height: 80%;
+    color: rgb(92, 211, 255);
+    stroke-width: 3.3px;
+}
+
+.navigation .back .backtext
+{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 30px;
+    color: rgb(92, 211, 255);
+}
+
+
+.navigation .queue
+{
+    font-size: 50px;
+    font-weight: 500;
+    align-self: flex-end;
+    color: rgb(92, 211, 255);
+    display: flex;
+    margin-top: 2%;
+    margin-right: 12%;
+}
+
+.musicinfo
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .leftside
 {
     z-index: 1;
-    position: inherit;
-    display: block;
-    align-items: center;
+    flex-direction: column;
     width: 70%;
-    position: relative;
-    margin: 5% 2% 5% 10%;
-    background: red;
-}
-
-.rightside
-{
-    z-index: 1;
-    width: 40%;
-    position: relative;
-    margin: 5% 10% 5% 0;
-    background: red;
-}
-
-.leftside .back
-{
-    z-index: 1;
-    background-color: blue;
-    
-    margin-left: 5%;
-    margin-top: 5%;
-    width: 25%;
-    height: 3%;
+    margin: 2.5% 2% 0% 10%;
+    color: white;
 }
 
 .leftside .songinfo
 {
-    background-color: yellow;
-    margin: 5% 5% 5% 5%;
+    margin: 7% 5% 0% 5%;
+    text-align: center;
 }
+
+.leftside .songinfo .songTitle
+{
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+
+.leftside .songinfo .artist,
+.leftside .songinfo .album
+{
+    font-size: 40px;
+}
+
+
+.leftside .songinfo .album
+{
+    color: rgb(92, 211, 255);
+}
+
 
 .leftside .controls
 {
-    background-color: yellow;
-    margin: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: 18.5% 5% 5% 5%;
+    height: 10%;
 }
+
+.leftside .controls .last,
+.leftside .controls .next,
+.leftside .controls .pauseplay
+{
+    scale: 3.4;
+    stroke-width: 2px;
+    color: white;
+    fill: white;
+}
+
 
 .leftside .progress
 {
-    background-color: yellow;
-    margin: 5% 5% 5% 5%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-self: flex-end;
+    height: 5%;
 }
 
-.leftside .functions
+.leftside .progress .currenttime,
+.leftside .progress .remainingtime
+
 {
-    background-color: yellow;
-    margin: 5% 5% 5% 5%;
+    font-size: 40px;
+    font-weight: 500;
+    color: lightgray;
+}
+
+.leftside .progress .progressbar
+{
+    position: inherit;
+    width: 80%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.leftside .progress .currentprogress
+{
+    position: absolute;
+    margin-left: 9%;
+    width: 45%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+.rightside
+{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    width: 40%;
+    margin: 2% 10% 0% 0;
+}
+
+.rightside .songcover
+{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    background-image: url(img/CapoPlazaHustle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.functions
+{
+    display: flex;
+    align-self: center;
+    width: 40%;
+    align-items: center;
+    height: 30%;
+    justify-content: space-around;
+}
+
+.functions .like,
+.functions .shuffle,
+.functions .repeat
+{
+    scale: 3;
+    color: white;
 }
