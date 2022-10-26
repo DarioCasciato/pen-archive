@@ -40,8 +40,18 @@ html,body
     align-items: center;
     margin-top: 4%;
     margin-left: 12%;
+    transition: all .3s ease;
 }
 
+.navigation .back:hover
+{
+    scale: 0.95;
+}
+
+.navigation .back:active
+{
+    scale: 0.9;
+}
 
 .navigation .back .icon
 {
@@ -70,6 +80,18 @@ html,body
     display: flex;
     margin-top: 2%;
     margin-right: 12%;
+    transition: all .3s ease;
+}
+
+.navigation .queue:hover
+{
+    cursor: pointer;
+    scale: 0.95;
+}
+
+.navigation .queue:active
+{
+    scale: 0.9;
 }
 
 .musicinfo
@@ -133,8 +155,23 @@ html,body
     stroke-width: 2px;
     color: white;
     fill: white;
+    transition: all 0.3s ease;
 }
 
+.leftside .controls .last:hover,
+.leftside .controls .next:hover,
+.leftside .controls .pauseplay:hover
+{
+    scale: 3.2;
+    cursor: pointer;
+}
+
+.leftside .controls .last:active,
+.leftside .controls .next:active,
+.leftside .controls .pauseplay:active
+{
+    scale: 3;
+}
 
 .leftside .progress
 {
@@ -166,6 +203,12 @@ html,body
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
 }
+
+.leftside .progress .progressbar:hover
+{
+    cursor: pointer;
+}
+
 .leftside .progress .currentprogress
 {
     position: absolute;
@@ -216,4 +259,25 @@ html,body
 {
     scale: 3;
     color: white;
+    transition: all .3s ease;
+}
+
+.functions .like:hover
+{
+    fill: white;
+}
+
+.functions .shuffle:hover,
+.functions .repeat:hover,
+.functions .like:hover
+{
+    scale: 2.8;
+    cursor: pointer;
+}
+
+.functions .shuffle:active,
+.functions .repeat:active,
+.functions .like:active
+{
+    scale: 2.6;
 }
