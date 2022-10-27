@@ -1,15 +1,13 @@
-:root
-{
+:root {
     --songtitle:
 }
 
-*
-{
+* {
     font-family: "BlinkMacSystemFont", sans-serif;
 }
 
-html,body 
-{
+html,
+body {
     display: flex;
     height: 100%;
     width: 100%;
@@ -18,24 +16,21 @@ html,body
 }
 
 
-.content
-{
+.content {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-.navigation
-{
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.navigation .back
-{
+.navigation .back {
     display: flex;
     align-items: center;
     margin-top: 4%;
@@ -43,18 +38,12 @@ html,body
     transition: all .3s ease;
 }
 
-.navigation .back:hover
-{
-    scale: 0.95;
-}
 
-.navigation .back:active
-{
+.navigation .back:active {
     scale: 0.9;
 }
 
-.navigation .back .icon
-{
+.navigation .back .icon {
     scale: 2.2;
     width: 80%;
     height: 80%;
@@ -62,17 +51,14 @@ html,body
     stroke-width: 3.3px;
 }
 
-.navigation .back .backtext
-{
+.navigation .back .backtext {
     font-size: 70px;
     font-weight: 500;
     margin-left: 30px;
     color: rgb(92, 211, 255);
 }
 
-
-.navigation .queue
-{
+.navigation .queue {
     font-size: 70px;
     font-weight: 500;
     align-self: flex-end;
@@ -83,26 +69,17 @@ html,body
     transition: all .3s ease;
 }
 
-.navigation .queue:hover
-{
-    cursor: pointer;
-    scale: 0.95;
-}
-
-.navigation .queue:active
-{
+.navigation .queue:active {
     scale: 0.9;
 }
 
-.musicinfo
-{
+.musicinfo {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.leftside
-{
+.leftside {
     z-index: 1;
     flex-direction: column;
     width: 70%;
@@ -110,14 +87,12 @@ html,body
     color: white;
 }
 
-.leftside .songinfo
-{
+.leftside .songinfo {
     margin: 7% 5% 0% 5%;
     text-align: center;
 }
 
-.leftside .songinfo .songTitle
-{
+.leftside .songinfo .songTitle {
     font-size: 70px;
     font-weight: 600;
     margin-top: 10%;
@@ -125,23 +100,20 @@ html,body
 
 
 .leftside .songinfo .artist,
-.leftside .songinfo .album
-{
+.leftside .songinfo .album {
     font-size: 40px;
 }
 
 
-.leftside .songinfo .album
-{
+.leftside .songinfo .album {
     color: rgb(92, 211, 255);
 }
 
 
-.leftside .controls
-{
+.leftside .controls {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     margin: 15% 5% 5% 5%;
     height: 10%;
@@ -149,8 +121,7 @@ html,body
 
 .leftside .controls .last,
 .leftside .controls .next,
-.leftside .controls .pauseplay
-{
+.leftside .controls .pauseplay {
     scale: 7;
     stroke-width: 2px;
     color: white;
@@ -158,23 +129,13 @@ html,body
     transition: all 0.3s ease;
 }
 
-.leftside .controls .last:hover,
-.leftside .controls .next:hover,
-.leftside .controls .pauseplay:hover
-{
-    scale: 6;
-    cursor: pointer;
-}
-
 .leftside .controls .last:active,
 .leftside .controls .next:active,
-.leftside .controls .pauseplay:active
-{
+.leftside .controls .pauseplay:active {
     scale: 5.5;
 }
 
-.leftside .progress
-{
+.leftside .progress {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -188,16 +149,13 @@ html,body
 }
 
 .leftside .progress .currenttime,
-.leftside .progress .remainingtime
-
-{
+.leftside .progress .remainingtime {
     font-size: 40px;
     font-weight: 500;
     color: white;
 }
 
-.leftside .progress .progressbar
-{
+.leftside .progress .progressbar {
     position: inherit;
     width: 80%;
     height: 20%;
@@ -205,13 +163,7 @@ html,body
     border-radius: 5px;
 }
 
-.leftside .progress .progressbar:hover
-{
-    cursor: pointer;
-}
-
-.leftside .progress .currentprogress
-{
+.leftside .progress .currentprogress {
     position: absolute;
     margin-left: 9%;
     width: 45%;
@@ -220,8 +172,7 @@ html,body
     border-radius: 5px;
 }
 
-.rightside
-{
+.rightside {
     position: relative;
     display: flex;
     z-index: 1;
@@ -230,8 +181,7 @@ html,body
     margin: 2% 10% 0% 0;
 }
 
-.rightside .songcover
-{
+.rightside .songcover {
     display: block;
     margin: auto;
     width: 600px;
@@ -244,8 +194,7 @@ html,body
     box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
-.functions
-{
+.functions {
     display: flex;
     align-self: center;
     width: 40%;
@@ -256,29 +205,18 @@ html,body
 
 .functions .like,
 .functions .shuffle,
-.functions .repeat
-{
+.functions .repeat {
     scale: 4;
     color: white;
     transition: all .3s ease;
 }
 
-.functions .like:hover
-{
+.functions .like:hover {
     fill: white;
-}
-
-.functions .shuffle:hover,
-.functions .repeat:hover,
-.functions .like:hover
-{
-    scale: 3.5;
-    cursor: pointer;
 }
 
 .functions .shuffle:active,
 .functions .repeat:active,
-.functions .like:active
-{
+.functions .like:active {
     scale: 3.2;
 }
