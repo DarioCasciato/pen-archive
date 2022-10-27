@@ -1,1 +1,55 @@
-body {}
+* {
+    font-family: "BlinkMacSystemFont", sans-serif;
+}
+
+html,
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 1vh;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.content .header {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+}
+
+.content .header .time {
+    margin-left: 3%;
+}
+
+.content .header .battery {
+    margin-right: 3%;
+}
+
+.content .header .weather {
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+.content .header .mobileservice {
+    margin-right: 1%;
+}
+
+
+.content .navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    font-size: 30px;
+}
