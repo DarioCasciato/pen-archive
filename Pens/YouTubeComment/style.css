@@ -110,6 +110,7 @@ body
     scale: 1.3;
     margin-right: 0.7%;
     margin-top: 0.2%;
+    padding: 5px;
 }
 
 .comment .content .interactions .like:hover
@@ -130,6 +131,12 @@ body
     scale: 1.3;
     margin-right: 2%;
     margin-top: 0.2%;
+    padding: 5px;
+}
+
+.comment .content .interactions .dislike svg
+{
+    transform: translateY(2px);
 }
 
 .comment .content .interactions .dislike:hover
@@ -142,6 +149,7 @@ body
 {
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .comment .content .responses
@@ -189,11 +197,18 @@ body
 
 .comment .options .icon
 {
-    scale: 1.2;
+    scale: 1.5;
     margin-left: auto;
     margin-right: 20%;
     margin-top: 15%;
     opacity: 0;
+    padding: 3px;
+}
+
+.comment .options .icon:hover
+{
+    background: rgb(39, 39, 39);
+    border-radius: 100%;
 }
 
 .comment:hover .icon 
