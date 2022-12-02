@@ -17,8 +17,7 @@ body {
     background: linear-gradient(45deg, #47bbde, 70%, #0e71c0);
 }
 
-.pageTitle
-{
+.pageTitle {
     position: absolute;
     top: 10%;
     width: 380px;
@@ -28,10 +27,11 @@ body {
     background: white;
     border-radius: 100px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
 }
 
-.wrapper 
-{
+.wrapper {
     position: absolute;
     display: inline-block;
     top: 20%;
@@ -39,8 +39,7 @@ body {
     padding-right: 100px;
 }
 
-.wrapper .button 
-{
+.wrapper .button {
     display: inline-block;
     height: 90px;
     width: 120px;
@@ -56,14 +55,12 @@ body {
     transition: all .3s ease;
 }
 
-.wrapper .button a 
-{
+.wrapper .button a {
     color: inherit;
     text-decoration: none;
 }
 
-.wrapper .button span 
-{
+.wrapper .button span {
     color: inherit;
     padding: 1rem;
     display: inline-block;
@@ -73,13 +70,11 @@ body {
     font-size: 20px;
 }
 
-.wrapper .button:hover 
-{
+.wrapper .button:hover {
     transform: scale(0.95);
     color: rgba(50, 50, 50, .5);
 }
 
-.wrapper .button:active
-{
+.wrapper .button:active {
     transform: scale(0.9);
 }

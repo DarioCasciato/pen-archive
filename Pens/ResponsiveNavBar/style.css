@@ -12,7 +12,7 @@ body {
 .topbar {
   width: 100%;
   height: 60px;
-  background: rgb(100, 100, 100);
+  background: red;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -33,9 +33,6 @@ body {
 .topbar-left a:hover {
   background: green;
 }
-.topbar-left .icon {
-  display: none;
-}
 .topbar-right {
   align-items: center;
   display: flex;
@@ -46,7 +43,11 @@ body {
   font-size: 35px;
   color: white;
 }
+.topbar .icon {
+  display: none;
+}
 
+/* Hover Effects */
 /* Responsive */
 @media (max-width: 900px) {
   .topbar {
@@ -55,9 +56,15 @@ body {
   .topbar-left {
     display: none;
   }
-  .topbar-left .icon {
-    display: block;
-    padding: 50px;
-    background: blue;
+  .topbar .icon {
+    display: flex;
+    align-self: center;
+    padding: 25px 20px;
+    cursor: pointer;
+    background: red;
+    filter: brightness(1000%);
+  }
+  .topbar .icon:hover {
+    background: gray;
   }
 }/*# sourceMappingURL=style.css.map */
