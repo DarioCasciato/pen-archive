@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 70%;
+  height: auto;
+  margin-top: 80px;
+  padding: 20px;
+  border: solid 2px blue;
+  display: flex;
+  flex-direction: column;
+
+  .accordion {
+    margin-bottom: 20px;
+
+    &-header {
+      border-radius: 50px;
+      margin-left: 20px;
+    }
+
+    &-item {
+      border: solid 2px black;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+
+    &-button {
+      background: none;
+      padding: 20px;
+      font-size: 20px;
+
+      color: black;
+      font-weight: bold;
+    }
+  }
+}

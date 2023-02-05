@@ -1,0 +1,72 @@
+@font-face {
+  font-family: ArialRounded;
+  src: url(/footer/font/ARLRDBD.ttf);
+}
+body {
+  font-family: ArialRounded;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3D3D3D;
+  color: white;
+}
+.footer .links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  border-bottom: 2px solid;
+  padding-bottom: 40px;
+}
+.footer .links div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer .links div .title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.footer .links a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+  margin-bottom: 15px;
+}
+.footer .langs {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.footer .langs a {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer .socialmedia {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer .socialmedia img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.footer .rights {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */
